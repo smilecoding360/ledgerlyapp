@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFC29765">
   <title>Ledgerly</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      background: #f7fafc;
-      color: #111827;
-      display: flex;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .card {
-      max-width: 720px;
-      width: 100%;
-      background: #ffffff;
-      border-radius: 24px;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-      padding: 32px;
-      line-height: 1.65;
-    }
-    h1 {
-      margin-top: 0;
-      color: #0f172a;
-    }
-    p {
-      margin: 16px 0;
-    }
-    .footer {
-      margin-top: 24px;
-      font-size: 0.95rem;
-      color: #475569;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .label {
-      font-weight: 700;
-      color: #334155;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/branding/app_icon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <div class="card">
-    <h1>Ledgerly</h1>
-    <p>Ledgerly is an Android expense tracking application designed to simplify budgeting, transaction management, and spending analysis.</p>
-    <p class="label">Publisher</p>
-    <p>Ledgerly is published by an independent mobile developer.</p>
-    <p class="label">Support</p>
-    <p>For support inquiries, please contact <a href="xurge.dev+ledgerly@gmail.com">your-email@example.com</a>.</p>
-    <p class="label">Privacy</p>
-    <p>This page serves as the official developer website for the Ledgerly app and supports Google Play and AdMob verification requirements.</p>
-    <div class="footer">
-      <p>Please use this site URL as the Developer website in the Google Play Console.</p>
-    </div>
+  <div class="page-shell">
+    <header class="hero-panel">
+      <nav class="topbar">
+        <div class="brand-row">
+          <img class="app-icon" src="assets/images/branding/app_icon_bg.png" alt="Ledgerly app icon">
+          <div>
+            <p class="eyebrow">Ledgerly</p>
+            <p class="brand-name">Smart expense tracker</p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow uppercase">Simple finance</span>
+          <h1>Track money better, every day.</h1>
+          <p>Add expenses fast. Stay on budget. See clear insights.</p>
+          <div class="cta-group">
+            <a class="play-badge-link" href="https://play.google.com/store/apps/details?id=com.flutterapp.ledgerly"
+              title="Get it on Google Play" aria-label="Get it on Google Play">
+              <img class="play-badge" src="assets/images/badges/google-play-en.png" alt="Get it on Google Play">
+            </a>
+          </div>
+        </div>
+        <div class="hero-carousel" aria-label="Ledgerly screenshot carousel">
+
+          <div class="hero-slide hero-slide--center">
+            <img src="assets/images/screenshots/transparent_7.png" alt="Ledgerly screenshot">
+          </div>
+          <div class="hero-slide hero-slide--right">
+            <img src="assets/images/screenshots/transparent_8.png" alt="Ledgerly screenshot">
+          </div>
+          <div class="hero-slide hero-slide--back">
+            <img src="assets/images/screenshots/transparent_9.png" alt="Ledgerly screenshot">
+          </div>
+          <div class="hero-slide hero-slide--left">
+            <img src="assets/images/screenshots/transparent_10.png" alt="Ledgerly screenshot">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="feature-grid" id="features">
+      <article class="feature-card">
+        <h2>Quick add</h2>
+        <p>Log spending in seconds with smart category picks.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Budgets & alerts</h2>
+        <p>Set limits and get alerts before you overspend.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Clear insights</h2>
+        <p>View charts and trends to plan with confidence.</p>
+      </article>
+    </section>
+
+    <!-- gallery-section removed; hero image will auto-rotate through screenshots -->
+
+    <section class="details-panel">
+      <div class="detail-card">
+        <h3>Secure sync</h3>
+        <p>Your data stays encrypted across devices.</p>
+      </div>
+      <div class="detail-card">
+        <h3>Smart reports</h3>
+        <p>Get monthly spending summaries automatically.</p>
+      </div>
+      <div class="detail-card">
+        <h3>Actionable alerts</h3>
+        <p>Receive simple reminders when limits are near.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="footer">
+      <div>
+        <p class="footer-heading">Ledgerly</p>
+        <p class="footer-text">Simple expense tracking for Android.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://smilecoding360.github.io/ledgerlytermsofuse/" target="_blank">Terms of Use</a>
+        <a href="https://smilecoding360.github.io/ledgerlyprivacypolicy/" target="_blank">Privacy Policy</a>
+        <a href="mailto:xurge.dev+ledgerly@gmail.com">Contact Us</a>
+      </div>
+    </footer>
   </div>
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>
